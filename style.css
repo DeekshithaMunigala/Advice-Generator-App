@@ -55,6 +55,23 @@ body {
     background-color: hsl(150, 100%, 66%);
 }
 
+.dice-img img {
+    cursor: pointer;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    animation: rotateAnimation 1s linear;
+}
+
 .content .dice-img:hover {
     box-shadow: 2px 2px 5px hsl(150, 100%, 66%), -2px -2px 5px hsl(150, 100%, 66%), 2px -2px 5px hsl(150, 100%, 66%), -2px 2px 5px hsl(150, 100%, 66%);
 }
