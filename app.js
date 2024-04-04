@@ -3,7 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const generatorButton = document.querySelector('.content .dice-img .dice');
     const idElement = document.querySelector('.content .heading span')
 
-    generatorButton.addEventListener('click', getAdvice);
+    generatorButton.addEventListener('click', () => {
+        getAdvice();
+        rotateDice();
+    });
 
     function getAdvice() {
         fetch('https://api.adviceslip.com/advice')
@@ -22,4 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
         idElement.textContent = `${id}`
         adviceElement.textContent = `"${advice}"`;
     }
-})
+    
+    function rotateDice() {
+        const diceImg = document.querySelector('.dice-img img');
+        diceImg.classList.add('rotate');
+        setTimeout(() => {
+            diceImg.classList.remove('rotate');
+        }, 500); 
+    }
+});
