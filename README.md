@@ -10,6 +10,10 @@ Welcome to the Advice Generator App! This is a simple web application that provi
 
 - **Responsive Design:** The app is optimized for both desktop and mobile viewing, ensuring a seamless experience across various devices.
 
+## Demo
+
+You can try out the app live [here](https://advice-generator-app-omega-six.vercel.app/)
+
 ## Installation
 
 1. Clone the repository to your local machine:
