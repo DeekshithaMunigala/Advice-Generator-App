@@ -19,7 +19,7 @@ You can try out the app live [here](https://advice-generator-app-omega-six.verce
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/yourusername/advice-generator-app.git
+    git clone https://github.com/DeekshithaMunigala/advice-generator-app.git
     ```
 
 2. Open `index.html` in your web browser.
